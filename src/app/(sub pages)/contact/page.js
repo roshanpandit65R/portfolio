@@ -11,7 +11,7 @@ export default function Contact() {
     <>
       <Image
         src={bg}
-        alt="Next.js Portfolio website's contact page background image"
+        alt="Next.js Portfolio website&apos;s contact page background image"
         priority
         sizes="100vw"
         className="-z-50 fixed top-0 left-0 w-full h-full object-cover object-center opacity-50"
@@ -23,12 +23,7 @@ export default function Contact() {
             summon the wizard
           </h1>
           <p className="text-center font-light text-sm xs:text-base">
-            Step into the circle of enchantment and weave your words into the
-            fabric of the cosmos. Whether you seek to conjure collaborations,
-            unlock mysteries, or simply share tales of adventure, your messages
-            are treasured scrolls within this realm. Use the form below to send
-            your missives through the ethereal network, and await the whisper of
-            magic in response.
+            Step into a world of magic and weave your words into the universe. Whether you&apos;re looking to team up, discover secrets, or just share stories of adventure, your messages are valuable here. Use the form below to send your notes and wait for a magical reply.
           </p>
         </div>
         <Form />

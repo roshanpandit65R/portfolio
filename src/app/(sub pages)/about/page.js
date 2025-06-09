@@ -1,9 +1,11 @@
 import Image from "next/image";
 import bg from "../../../../public/background/about-background.png";
-import RenderModel from "@/components/RenderModel";
-// import HatModel from "@/components/models/HatModel";
-import AboutDetails from "@/components/about";
 import dynamic from "next/dynamic";
+import RenderModel from "@/components/RenderModel";
+import Staff from "@/components/models/Staff";
+import AboutDetails from "@/components/about";
+
+// Dynamically import HatModel (with SSR off)
 const HatModel = dynamic(() => import("@/components/models/HatModel"), {
   ssr: false,
 });
@@ -15,6 +17,7 @@ export const metadata = {
 export default function Home() {
   return (
     <>
+      {/* Background Image */}
       <Image
         src={bg}
         priority
@@ -23,23 +26,35 @@ export default function Home() {
         className="-z-50 fixed top-0 left-0 w-full h-full object-cover object-center opacity-50"
       />
 
-      <div className="w-full h-3/5 xs:h-3/4 sm:h-screen absolute top-1/2 -translate-y-1/2 left-0 z-10">
-        <RenderModel>
-          <HatModel />
-        </RenderModel>
+      {/* Hat Model - Crown Style */}
+      <div className="w-full h-[250px] sm:h-[300px] md:h-[350px] absolute top-[15%] left-0 z-20 flex justify-center items-end pointer-events-none">
+        <div className="w-[120px] sm:w-[160px] md:w-[200px]">
+          <RenderModel>
+            <HatModel />
+          </RenderModel>
+        </div>
       </div>
 
-      <div className="relative w-full h-screen flex flex-col items-center justify-center">
-        <div className="absolute flex flex-col items-center text-center top-1/2 sm:top-[60%] left-1/2 -translate-y-1/2 -translate-x-1/2">
-          <h1 className="font-bold  text-6xl xs:text-7xl sm:text-8xl  lg:text-9xl text-accent">
-            CodeBucks
+      {/* Name and Tagline */}
+      <div className="relative w-full h-[60vh] flex flex-col items-center justify-center mt-40 z-10">
+        <div className="flex flex-col items-center text-center">
+          <h1 className="font-bold text-5xl sm:text-6xl md:text-7xl text-accent">
+            Roshan Pandit
           </h1>
-          <p className="font-light text-foreground text-lg">
+          <p className="font-light text-foreground text-base sm:text-lg mt-2">
             Meet the wizard behind this portfolio
           </p>
         </div>
       </div>
 
+      {/* Staff Model (Optional) */}
+      <div className="flex items-center justify-center fixed top-[80%] left-1/2 -translate-x-1/2 lg:-left-24 -z-10 h-[300px] sm:h-[400px]">
+        <RenderModel>
+          <Staff />
+        </RenderModel>
+      </div>
+
+      {/* About Content Section */}
       <AboutDetails />
     </>
   );

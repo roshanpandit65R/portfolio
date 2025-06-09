@@ -12,18 +12,10 @@ const AboutDetails = () => {
           }
         >
           <h2 className="  text-xl md:text-2xl text-left w-full capitalize">
-            Architect of Enchantment
+            About me
           </h2>
           <p className="font-light  text-xs sm:text-sm md:text-base   ">
-            My journey in web development is powered by an array of mystical
-            tools and languages, with JavaScript casting the core of my
-            enchantments. I wield frameworks like React.js and Next.js with
-            precision, crafting seamless portals (websites) that connect realms
-            (users) across the digital universe. The ancient arts of the
-            Jamstack empower me to create fast, secure, and dynamic experiences,
-            while my design skills ensure every creation is not only functional
-            but visually captivating. Join me as I continue to explore new
-            spells and technologies to shape the future of the web.
+            I'm Roshan Pandit, an aspiring AI-ML from Nagpur, currently pursuing my Bachelor's in Artificial Intelligence and Machine Learning. I’m passionate about technology, problem-solving, and building meaningful solutions through code. With a strong foundation in programming and a constant drive to learn, I aim to contribute to innovative and impactful tech environments. I believe in collaboration, continuous learning, and using technology to create positive change.
           </p>
         </ItemLayout>
 
@@ -31,7 +23,7 @@ const AboutDetails = () => {
           className={" col-span-full xs:col-span-6 lg:col-span-4 text-accent"}
         >
           <p className="font-semibold w-full text-left text-2xl sm:text-5xl">
-            25+ <sub className="font-semibold text-base">clients</sub>
+            2<sub className="font-semibold text-base">clients</sub>
           </p>
         </ItemLayout>
 
@@ -39,11 +31,11 @@ const AboutDetails = () => {
           className={"col-span-full xs:col-span-6 lg:col-span-4 text-accent"}
         >
           <p className="font-semibold w-full text-left text-2xl sm:text-5xl">
-            4+{" "}
+            1{" "}
             <sub className="font-semibold text-base">years of experience</sub>
           </p>
         </ItemLayout>
-
+{/* 
         <ItemLayout
           className={"col-span-full sm:col-span-6 md:col-span-4 !p-0"}
         >
@@ -53,36 +45,36 @@ const AboutDetails = () => {
             alt="CodeBucks"
             loading="lazy"
           />
-        </ItemLayout>
+        </ItemLayout> */}
 
-        <ItemLayout className={"col-span-full md:col-span-8 !p-0"}>
+        {/* <ItemLayout className={"col-span-full md:col-span-8 !p-0"}>
           <img
             className="w-full h-auto"
             src={`${process.env.NEXT_PUBLIC_GITHUB_STATS_URL}/api?username=codebucks27&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false`}
             alt="CodeBucks"
             loading="lazy"
           />
-        </ItemLayout>
+        </ItemLayout> */}
 
         <ItemLayout className={"col-span-full"}>
           <img
             className="w-full h-auto"
-            src={`https://skillicons.dev/icons?i=appwrite,aws,babel,bootstrap,cloudflare,css,d3,docker,figma,firebase,gatsby,git,github,graphql,html,ipfs,js,jquery,kubernetes,linux,mongodb,mysql,netlify,nextjs,nodejs,npm,postgres,react,redux,replit,sass,supabase,tailwind,threejs,vercel,vite,vscode,yarn`}
+src={`https://skillicons.dev/icons?i=html,css,js,react,ai,tailwind,bootstrap,nodejs,express,mongodb,mysql,sqlite,firebase,python,selenium,pandas,git,github,vercel,netlify,vscode,figma,vite,linux,npm,arduino,raspberrypi`}
             alt="CodeBucks"
             loading="lazy"
           />
         </ItemLayout>
 
-        <ItemLayout className={"col-span-full md:col-span-6 !p-0"}>
+        {/* <ItemLayout className={"col-span-full md:col-span-6 !p-0"}>
           <img
             className="w-full h-auto"
             src={`${process.env.NEXT_PUBLIC_GITHUB_STREAK_STATS_URL}?user=codebucks27&theme=dark&hide_border=true&type=svg&background=EB545400&ring=FEFE5B&currStreakLabel=FEFE5B`}
             alt="CodeBucks"
             loading="lazy"
           />
-        </ItemLayout>
+        </ItemLayout> */}
 
-        <ItemLayout className={"col-span-full md:col-span-6 !p-0"}>
+        {/* <ItemLayout className={"col-span-full md:col-span-6 !p-0"}>
           <Link
             href="https://github.com/codebucks27/Nextjs-contentlayer-blog"
             target="_blank"
@@ -95,7 +87,7 @@ const AboutDetails = () => {
               loading="lazy"
             />
           </Link>
-        </ItemLayout>
+        </ItemLayout> */}
       </div>
     </section>
   );
